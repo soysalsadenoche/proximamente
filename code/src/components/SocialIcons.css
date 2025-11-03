@@ -1,0 +1,18 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+
+.social-icons a {
+  color: #f5eddc;
+  font-size: 1.6rem;
+  transition: all 0.4s ease;
+}
+
+.social-icons a:hover {
+  color: #fff9e8;
+  transform: scale(1.15) translateY(-2px);
+  filter: drop-shadow(0 0 6px rgba(255, 235, 200, 0.4));
+}
