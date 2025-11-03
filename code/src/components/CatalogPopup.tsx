@@ -29,12 +29,29 @@ const CatalogPopup = ({ isOpen, onClose }: CatalogPopupProps) => {
               ✕
             </button>
 
-            <iframe
-              src="/catalogo.pdf"
-              title="Catálogo Salsa de Noche"
-              loading="lazy"
-              className="catalog-iframe"
-            />
+            {/* Detección simple del dispositivo */}
+            {/(iPhone|iPad|iPod)/i.test(navigator.userAgent) ? (
+              <div className="catalog-fallback">
+                <p>
+                  Para ver el catálogo completo, abrilo en una nueva ventana:{" "}
+                  <a
+                    href="/catalogo.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="catalog-link"
+                  >
+                    Abrir catálogo
+                  </a>
+                </p>
+              </div>
+            ) : (
+              <iframe
+                src="/catalogo.pdf"
+                title="Catálogo Salsa de Noche"
+                loading="lazy"
+                className="catalog-iframe"
+              />
+            )}
           </motion.div>
         </motion.div>
       )}

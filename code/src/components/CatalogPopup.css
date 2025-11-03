@@ -66,3 +66,20 @@
   background: rgba(255, 240, 210, 0.22);
   transform: scale(1.12);
 }
+
+.catalog-fallback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #f5eddc;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-link {
+  color: #f8e8c0;
+  margin-left: 0.4rem;
+  text-decoration: underline;
+}
