@@ -5,7 +5,7 @@ const SocialIcons = () => {
   return (
     <div className="social-icons">
       <a
-        href="https://www.instagram.com/_salsadenoche_/"
+        href="https://www.instagram.com/_salsadenoche/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
