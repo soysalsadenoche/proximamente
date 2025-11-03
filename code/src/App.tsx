@@ -1,10 +1,15 @@
 import "./index.css";
 import StarBackground from "./components/StarBackground";
 import logo from "./assets/logo.png";
-import SocialIcons from "./components/SocialIcons";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import SocialIcons from "./components/SocialIcons";
+import CatalogPopup from "./components/CatalogPopup"; 
+
 
 function App() {
+  
+  const [showCatalog, setShowCatalog] = useState(false);
   return (
     <div className="app-container">
       <StarBackground />
@@ -50,6 +55,16 @@ function App() {
           <button>NOTIFICAME</button>
         </motion.form>
 
+        {/* Botón para ver catálogo */}
+        <motion.button
+          className="catalog-btn"
+          onClick={() => setShowCatalog(true)}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 1 }}
+        >
+          VER CATÁLOGO
+        </motion.button>
         {/* ICONOS SOCIALES */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -58,7 +73,10 @@ function App() {
         >
           <SocialIcons />
         </motion.div>
+        
       </main>
+      {/* Popup */}
+      <CatalogPopup isOpen={showCatalog} onClose={() => setShowCatalog(false)} />
     </div>
   );
 }

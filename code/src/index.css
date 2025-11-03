@@ -160,3 +160,22 @@ body::before {
 }
 
 
+.catalog-btn {
+  margin-top: 1.6rem;
+  background: linear-gradient(90deg, #f8e8c0, #e8d0a8);
+  color: #1a140f;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  padding: 0.8rem 1.8rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-family: "Playfair Display", serif;
+  transition: all 0.3s ease;
+}
+
+.catalog-btn:hover {
+  background: linear-gradient(90deg, #fff2dc, #f8e4b9);
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(255, 230, 190, 0.25);
+}

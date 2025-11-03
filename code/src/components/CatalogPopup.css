@@ -1,0 +1,68 @@
+/* Fondo transparente para dejar ver las estrellas */
+.catalog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;/* ligera sombra para contraste */
+  backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Ventana más ancha y translúcida */
+.catalog-modal {
+  position: relative;
+  width: 92%;
+  max-width: 1180px; /* antes 960px */
+  height: 82vh;
+  border: 1px solid rgba(255, 230, 190, 0.15);
+  box-shadow: 0 0 28px rgba(255, 220, 160, 0.12);
+  border-radius: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(10px) saturate(140%);
+  animation: fadeInModal 0.4s ease-out;
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* PDF */
+.catalog-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Botón cerrar */
+.catalog-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 1.3rem;
+  background: rgba(255, 248, 230, 0.12);
+  border: none;
+  color: #f5eddc;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  line-height: 36px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.catalog-close:hover {
+  background: rgba(255, 240, 210, 0.22);
+  transform: scale(1.12);
+}

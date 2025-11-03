@@ -39,7 +39,7 @@ const StarBackground = () => {
         },
         particles: {
           // ✅ corregido: "area" → "width" (el tipo nuevo de density)
-          number: { value: 500, density: { enable: true, width: 1000 } },
+          number: { value: 300, density: { enable: true, width: 1000 } },
           color: {
             value: ["#fff8e6", "#f8e8c0", "#e8d0a8", "#fff2dc"],
           },

@@ -1,0 +1,52 @@
+.catalog-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: center;
+  color: #f5eddc;
+  font-family: "Playfair Display", serif;
+  padding: 1rem;
+  animation: fadeIn 2s ease;
+}
+
+.catalog-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #f8e8c0, #fff2dc, #e8d0a8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+.catalog-frame {
+  width: 100%;
+  height: 80vh;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 24px rgba(255, 233, 200, 0.2);
+  background: rgba(255, 248, 230, 0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 240, 200, 0.1);
+}
+
+.catalog-note {
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  color: #e8dcb7;
+}
+
+.catalog-note a {
+  color: #fff2dc;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
