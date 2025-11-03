@@ -1,14 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="prefetch" href="/catalogo.pdf" as="document" type="application/pdf" />
+    <link
+      rel="prefetch"
+      href="/catalogo.pdf"
+      as="document"
+      type="application/pdf"
+    />
+    <!-- SEO meta -->
+    <meta name="title" content="Salsa de Noche | Moda Femenina" />
+    <meta
+      name="description"
+      content="Salsa de Noche - Indumentaria femenina inspirada en la noche y la elegancia moderna. Conocé nuestro catálogo primavera/verano. ✨"
+    />
+    <meta
+      name="keywords"
+      content="salsa de noche, moda femenina, catálogo, indumentaria, boho glam, argentina, vestidos, verano, ropa"
+    />
+    <meta name="author" content="Salsa de Noche" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.salsadenoche.com/" />
+    <meta property="og:title" content="Salsa de Noche | Moda Femenina" />
+    <meta
+      property="og:description"
+      content="Conocé nuestro catálogo primavera/verano. ✨"
+    />
+    <meta property="og:image" content="/assets/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Salsa de Noche | Moda Femenina" />
+    <meta
+      property="twitter:description"
+      content="Conocé nuestro catálogo primavera/verano. ✨"
+    />
+    <meta property="twitter:image" content="/assets/og-image.jpg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salsa de Noche</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Salsa de Noche",
+        "url": "https://www.salsadenoche.com",
+        "logo": "https://www.salsadenoche.com/assets/logo.png",
+        "sameAs": [
+          "https://www.instagram.com/_salsadenoche",
+          "https://www.facebook.com/profile.php?id=61579343969713"
+        ],
+        "description": "Indumentaria femenina pensada para acompañar distintos cuerpos y momentos del día."
+      }
+    </script>
+    <section style="visibility: hidden;" class="seo-description">
+      <h2>Indumentaria femenina Salsa de Noche</h2>
+      <p>
+        Salsa de Noche es una marca argentina de indumentaria femenina diseñada
+        para acompañar distintos cuerpos y momentos del día. Nuestra colección
+        combina estilo bohemio, texturas naturales y elegancia contemporánea.
+      </p>
+      <p>
+        Muy pronto podrás comprar online y explorar nuestro catálogo completo de
+        remeras, tops, jeans, vestidos, accesorios y más.
+      </p>
+    </section>
   </body>
 </html>

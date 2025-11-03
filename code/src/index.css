@@ -179,3 +179,8 @@ body::before {
   transform: translateY(-2px);
   box-shadow: 0 0 10px rgba(255, 230, 190, 0.25);
 }
+
+.seo-description {
+  position: absolute;
+  left: -9999px;
+}

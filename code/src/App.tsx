@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import SocialIcons from "./components/SocialIcons";
 import CatalogPopup from "./components/CatalogPopup"; 
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 
 function App() {
@@ -77,6 +78,8 @@ function App() {
       </main>
       {/* Popup */}
       <CatalogPopup isOpen={showCatalog} onClose={() => setShowCatalog(false)} />
+      {/* Botón flotante WhatsApp */}
+      <FloatingWhatsApp />
     </div>
   );
 }
